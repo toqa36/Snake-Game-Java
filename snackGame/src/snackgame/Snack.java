@@ -74,7 +74,7 @@ public class Snack extends JPanel implements KeyListener, ActionListener {
         g.setColor(Color.BLUE);
         g.drawRect(24, 10, 851, 55);
 
-        title = new ImageIcon("D:\\Projects\\photo\\title.png");
+        title = new ImageIcon("D:\\Projects\\snakeGame\\photo\\title.png");
         title.paintIcon(this, g, 25, 11);
 
         g.setColor(Color.BLUE);
@@ -87,32 +87,32 @@ public class Snack extends JPanel implements KeyListener, ActionListener {
         g.setFont(new Font("arial", Font.PLAIN, 14));
         g.drawString("Score: " + score, 780, 50);
 
-        Right = new ImageIcon("D:\\Projects\\photo\\right.png");
+        Right = new ImageIcon("D:\\Projects\\snakeGame\\photo\\right.png");
         Right.paintIcon(this, g, width[0], hight[0]);
 
         for (int i = 0; i < snakeLenght; i++) {
             if (i == 0 && up) {
-                Up = new ImageIcon("D:\\Projects\\photo\\up.png");
+                Up = new ImageIcon("D:\\Projects\\snakeGame\\photo\\up.png");
                 Up.paintIcon(this, g, width[i], hight[i]);
             }
             if (i == 0 && down) {
-                Down = new ImageIcon("D:\\Projects\\photo\\down.png");
+                Down = new ImageIcon("D:\\Projects\\snakeGame\\photo\\down.png");
                 Down.paintIcon(this, g, width[i], hight[i]);
             }
             if (i == 0 && right) {
-                Right = new ImageIcon("D:\\Projects\\photo\\right.png");
+                Right = new ImageIcon("D:\\Projects\\snakeGame\\photo\\right.png");
                 Right.paintIcon(this, g, width[i], hight[i]);
             }
             if (i == 0 && left) {
-                Left = new ImageIcon("D:\\Projects\\photo\\left.png");
+                Left = new ImageIcon("D:\\Projects\\snakeGame\\photo\\left.png");
                 Left.paintIcon(this, g, width[i], hight[i]);
             }
             if (i != 0) {
-                snack = new ImageIcon("D:\\Projects\\photo\\body.png");
+                snack = new ImageIcon("D:\\Projects\\snakeGame\\photo\\body.png");
                 snack.paintIcon(this, g, width[i], hight[i]);
             }
         }
-        eat = new ImageIcon("D:\\Projects\\photo\\eat.png");
+        eat = new ImageIcon("D:\\Projects\\snakeGame\\photo\\eat.png");
         if ((eatWidthPosition[widthPosition] == width[0]) && (eatHightPosition[hightPosition] == hight[0])) {
             score++;
             snakeLenght++;
